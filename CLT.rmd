@@ -55,7 +55,9 @@ mdata  <-matrix(Hdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 4")
 ```
-The sample mean is `r mean(x.avg)` and the standard deviation is `r sd(x.avg)`  
+
+
+The sample mean is `r mean(x.avg)` and the standard deviation is `r sd(x.avg)`    
 
 Then again for 9 random samples  
 
@@ -100,7 +102,7 @@ The sample mean is `r mean(x.avg)` and the standard deviation is `r sd(x.avg)`
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
-
+As we increased the sample sizes in our code, the distribution of our graphs become more Normal.  With a sample size of n = 1, the distribution was bimodal; by contrast, at a sample size of n = 36, the same data follows that standard bell curve which is associated with a Normal distribution.  This follows the Central Limit Theorem exactly, which postulates that increasing the sample size from a population will result in a Normal graphical representation for that group, even if the data itself is (like ours) not Normally distributed, and instead bimodal, trimodal, or otherwise skewed.
 
 
 
