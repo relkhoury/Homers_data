@@ -21,13 +21,13 @@ options(digits=1)
 
 
 
-Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+**Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?**  
 
 The data is bimodal, indicating that it has two peaks.  The peaks are nearly identical, peaking at densities of about 0.015.  The sample mean is `r mean(my1000)` and the standard deviation is `r sd(my1000)`
 
 
 
-Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
+**Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages**  
 
 ```{r}
 numb = 2
@@ -37,7 +37,7 @@ x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 2")
 ```
 
-Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?   
+**Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?**  
 
 This data is trimodal, but more of the data seems to tend more towards being Normal, highlighting the Central Limit Theorem.  The sample mean is `r mean(x.avg)` and the standard deviation is `r sd(x.avg)`
 
@@ -46,7 +46,7 @@ This data is trimodal, but more of the data seems to tend more towards being Nor
 
  
 
-Do this again for 4 random samples
+**Do this again for 4 random samples**
 
 ```{r}
 numb = 4
@@ -59,7 +59,7 @@ densityplot(x.avg,main="sample size 4")
 
 The sample mean is `r mean(x.avg)` and the standard deviation is `r sd(x.avg)`    
 
-Then again for 9 random samples  
+**Then again for 9 random samples**
 
 ```{r}
 numb = 9
@@ -72,7 +72,7 @@ densityplot(x.avg,main="sample size 9")
 The sample mean is `r mean(x.avg)` and the standard deviation is `r sd(x.avg)`  
 
 
-then 16 random samples  
+**Then 16 random samples**  
 
 ```{r}
 numb = 16
@@ -85,7 +85,7 @@ densityplot(x.avg,main="sample size 16")
 The sample mean is `r mean(x.avg)` and the standard deviation is `r sd(x.avg)`
 
 
-finally for 36 random samples.
+**Finally for 36 random samples.**  
 
 ```{r}
 numb = 36
@@ -100,7 +100,7 @@ The sample mean is `r mean(x.avg)` and the standard deviation is `r sd(x.avg)`
 
 
 
-Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
+**Write a summary paragraph describing what you observed and how it relates to the central limit theorem.**  
 
 As we increased the sample sizes in our code, the distribution of our graphs become more Normal.  With a sample size of n = 1, the distribution was bimodal; by contrast, at a sample size of n = 36, the same data follows that standard bell curve which is associated with a Normal distribution.  This follows the Central Limit Theorem exactly, which postulates that increasing the sample size from a population will result in a Normal graphical representation for that group, even if the data itself is (like ours) not Normally distributed, and instead bimodal, trimodal, or otherwise skewed.
 
@@ -109,7 +109,7 @@ As we increased the sample sizes in our code, the distribution of our graphs bec
 
 
 
-Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
+**Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.**  
 
 The Central Limit Theorem asserts that, as you increase the sample size from which you take observations for a population, the sample mean will tend closer to the actual, population mean.  As we increased the sample sizes throughout our analyses, they remained near the actual population mean (50), cementing the aforementioned as true.  The Theorem also notes that increasing the sample size will decrease the standard deviation of the distribution; this, we also found to be valid, as the standard deviation with n = 1 was 41.9, and our final standard deviation (n = 36) was 6.8.  Clearly, the more Normal a distribution presents itself, the more predictable the placement of data points, resulting in less variation among the statistic, and thus a smaller standard deviation.
 
