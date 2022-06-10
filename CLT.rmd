@@ -111,7 +111,7 @@ As we increased the sample sizes in our code, the distribution of our graphs bec
 
 Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
 
-
+The Central Limit Theorem asserts that, as you increase the sample size from which you take observations for a population, the sample mean will tend closer to the actual, population mean.  As we increased the sample sizes throughout our analyses, they remained near the actual population mean (50), cementing the aforementioned as true.  The Theorem also notes that increasing the sample size will decrease the standard deviation of the distribution; this, we also found to be valid, as the standard deviation with n = 1 was 41.9, and our final standard deviation (n = 36) was 6.8.  Clearly, the more Normal a distribution presents itself, the more predictable the placement of data points, resulting in less variation among the statistic, and thus a smaller standard deviation.
 
 
 
